@@ -940,44 +940,264 @@ ul {
    スマートフォン対応
    ========================= */
 
+/* =========================
+   スマートフォン対応
+========================= */
+
 @media (max-width: 768px) {
 
     body {
-        font-size: 15px;
+        font-size: 14px;
     }
 
+    /* ヘッダー */
     .header-inner {
-        padding: 0 20px;
+        height: auto;
+        min-height: 70px;
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
     }
 
     .nav ul {
-        gap: 16px;
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .nav a {
+        font-size: 12px;
+    }
+
+
+    /* メインビジュアル */
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero-inner {
+        max-width: 90%;
+    }
+
+    .hero-label {
+        margin-bottom: 12px;
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        margin-bottom: 20px;
+        font-size: 34px;
+        line-height: 1.4;
+    }
+
+    .hero-text {
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 13px 25px;
         font-size: 13px;
     }
 
+
+    /* 共通セクション */
+    .about,
+    .service,
+    .news,
+    .company,
+    .access,
+    .news-page,
+    .contact-page {
+        padding: 60px 0;
+    }
+
+
+    /* 会社紹介 */
+    .about-inner {
+        display: block;
+        max-width: 90%;
+    }
+
+    .about-text {
+        margin-bottom: 40px;
+    }
+
+    .about-text h2 {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .about-box {
+        min-height: 250px;
+    }
+
+    .about-box span {
+        font-size: 70px;
+    }
+
+
+    /* 見出し */
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+
+    /* 事業内容 */
+    .service-inner {
+        max-width: 90%;
+    }
+
+    .service-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .service-card {
+        padding: 30px 25px;
+    }
+
+
+    /* お知らせ */
+    .news-inner {
+        max-width: 90%;
+    }
+
+    .news-item {
+        grid-template-columns: 85px 70px 1fr;
+        gap: 10px;
+        min-height: 65px;
+    }
+
+    .news-item time {
+        font-size: 12px;
+    }
+
+    .news-category {
+        padding: 3px 5px;
+        font-size: 10px;
+    }
+
+    .news-item p {
+        font-size: 13px;
+    }
+
+    .news-arrow {
+        display: none;
+    }
+
+
+    /* お問い合わせ */
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact-inner {
+        display: block;
+        max-width: 90%;
+    }
+
+    .contact-text {
+        margin-bottom: 30px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact-button {
+        min-width: 0;
+        width: 100%;
+    }
+
+
+    /* 下層ページタイトル */
     .page-header {
-        padding: 55px 20px;
+        padding: 55px 0;
+    }
+
+    .page-header-inner {
+        max-width: 90%;
     }
 
     .page-header h1 {
         font-size: 32px;
     }
 
-    .section-heading h2 {
-        font-size: 26px;
+
+    /* 会社概要 */
+    .company-inner {
+        max-width: 90%;
     }
 
-    .contact-page,
+    .company-table th,
+    .company-table td {
+        padding: 15px 12px;
+        font-size: 13px;
+    }
+
+    .company-table th {
+        width: 30%;
+    }
+
+
+    /* アクセス */
+    .access-inner {
+        max-width: 90%;
+    }
+
+    .access-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .access-info {
+        padding: 25px;
+    }
+
+    .map-placeholder {
+        min-height: 280px;
+    }
+
+    .transport {
+        margin-top: 45px;
+        padding-top: 35px;
+    }
+
+
+    /* お知らせページ */
+    .news-page-inner {
+        max-width: 90%;
+    }
+
+    .news-page-item {
+        padding: 25px 0;
+    }
+
+    .news-page-item h3 {
+        font-size: 18px;
+    }
+
+    .news-page-meta {
+        gap: 10px;
+    }
+
+
+    /* お問い合わせページ */
     .contact-page-inner {
-        padding-left: 20px;
-        padding-right: 20px;
+        max-width: 90%;
     }
 
-}
+    .contact-page .section-heading {
+        margin-bottom: 35px;
+    }
 
-.form-submit button:hover span {
-    color: #fff;
 }
