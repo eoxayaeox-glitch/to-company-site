@@ -1201,3 +1201,12 @@ ul {
     }
 
 }
+/* Googleマップ スマホ対応 */
+@media (max-width: 768px) {
+
+    .map-placeholder iframe {
+        width: 100%;
+        height: 280px;
+    }
+
+}
