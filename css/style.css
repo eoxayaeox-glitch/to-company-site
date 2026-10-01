@@ -1240,3 +1240,24 @@ ul {
     }
 
 }
+/* IFAロゴエリア */
+.about-box-inner {
+    text-align: center;
+}
+
+.about-box-inner span {
+    display: block;
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 72px;
+    font-weight: normal;
+    letter-spacing: 0.12em;
+}
+
+.about-box-inner p {
+    margin-top: 8px;
+    color: #cbb77c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+}
