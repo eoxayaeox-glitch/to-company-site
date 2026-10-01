@@ -246,12 +246,31 @@ ul {
     background-color: #12304a;
 }
 
-.about-box span {
-    font-family: Georgia, serif;
-
-    font-size: 100px;
-    letter-spacing: 0.1em;
+.about-box-inner {
+    text-align: center;
 }
+
+.about-box-inner span {
+    display: block;
+
+    color: #fff;
+
+    font-family: Georgia, serif;
+    font-size: 72px;
+    font-weight: normal;
+    letter-spacing: 0.12em;
+}
+
+.about-box-inner p {
+    margin-top: 8px;
+
+    color: #cbb77c;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+}
+
 /* =========================
    事業内容
 ========================= */
